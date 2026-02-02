@@ -1,0 +1,155 @@
+﻿@inherits LayoutComponentBase
+<link href="css/Layoutgeneral.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<header>
+    <div class="shipping">FREE SHIPPING with $20 Purchase <a href="#">Details</a></div>
+    <nav class="top-nav">
+        <a href="#">Help</a>
+        <a href="#">Order Tracker</a>
+        <a href="#">About Us</a>
+        <a href="#">Newsletter Signup</a>
+    </nav>
+</header>
+<div class="container-header">
+    <div class="logo">
+        <img src="/Logo.png" alt="ShoesManage Logo">
+    </div>
+    <form class="search-bar" action="#">
+        <i class="fa fa-search" style="color:#17695b; margin-right:10px;"></i>
+        <input type="text" placeholder="What can we help you find?">
+        <button type="submit">SEARCH</button>
+    </form>
+    <div class="user-icons">
+        <a href="/khachhang" class="user-icon">
+            <i class="fa-solid fa-users"></i>
+        </a>
+        <a href="login" class="user-icon" id="userIcon">
+            <i class="fa-regular fa-user"></i>
+        </a>
+        <a href="#" class="notification">
+            <i class="fa-regular fa-heart"></i>
+            <span class="badge">3</span>
+        </a>
+        <a href="/Cart" class="notification">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="badge">2</span>
+        </a>
+    </div>
+</div>
+<nav class="main-nav">
+    <a href="#" class="active">HOME</a>
+    <NavLink href="/shoelist" class="nav-link" activeClass="active">SHOES LIST</NavLink>
+  
+    <NavLink href="/shoes-sole" class="nav-link" activeClass="active">SHOES SOLE</NavLink>
+    <NavLink href="/blog" class="nav-link" activeClass="active">BLOGS</NavLink>
+    <NavLink href="/polish" class="nav-link" activeClass="active">SHOE POLISH</NavLink>
+
+</nav>
+
+<main>
+    @Body
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-main">
+            <!-- Left -->
+            <div class="footer-left">
+                <img src="/Logo.png" alt="Fshoes logo" class="footer-logo">
+                <div class="footer-slogan">All Kinds of Shoes, All in One Place!</div>
+                <div class="footer-newsletter">
+                    <div class="footer-newsletter-title">Subscribe To Our Newsletter</div>
+                    <div class="footer-newsletter-desc">New blogs about cats every week!</div>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="YOUR EMAIL ADDRESS">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Right -->
+            <div class="footer-right">
+                <div class="footer-top-row">
+                    <div class="footer-col">
+                        <div class="footer-col-title">Where's my order?</div>
+                        <button>TRACK ORDER</button>
+                        <div class="footer-col-desc">
+                            Please note, it may take longer than usual to fulfill orders due to the impacts of
+                            COVID-19.
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title">Shipping</div>
+                        <div class="footer-col-desc">About Free Shipping</div>
+                        <div class="footer-col-desc">Shipping Information</div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title">Shopping App</div>
+                        <div class="footer-col-desc">
+                            Try our View in Your Room feature, manage registries and save payment info.
+                        </div>
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                             alt="App Store" class="footer-app-img">
+                    </div>
+                </div>
+                <div class="footer-bottom-row">
+                    <div class="footer-bottom-col">
+                        <div class="footer-bottom-col-title">Our Company</div>
+                        <ul class="footer-bottom-col-list">
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>Contact</li>
+                            <li>Store locations</li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom-col">
+                        <div class="footer-bottom-col-title">Social Media</div>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook">
+                                <svg width="22" height="22" fill="#006666" viewBox="0 0 24 24">
+                                    <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.406.595 24 1.325 24H12.82v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .592 23.406 0 22.675 0">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <svg width="22" height="22" fill="#006666" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.497 5.782 2.225 7.148 2.163 8.414 2.105 8.794 2.163 12 2.163zm0-2.163C8.741 0 8.332.012 7.052.07 5.77.127 4.665.387 3.678 1.374 2.691 2.361 2.431 3.466 2.374 4.748 2.316 6.028 2.304 6.437 2.304 12c0 5.563.012 5.972.07 7.252.057 1.282.317 2.387 1.304 3.374.987.987 2.092 1.247 3.374 1.304 1.28.058 1.689.07 7.252.07s5.972-.012 7.252-.07c1.282-.057 2.387-.317 3.374-1.304.987-.987 1.247-2.092 1.304-3.374.058-1.28.07-1.689.07-7.252s-.012-5.972-.07-7.252c-.057-1.282-.317-2.387-1.304-3.374C21.387.387 20.282.127 19 .07 17.72.012 17.311 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="YouTube">
+                                <svg width="22" height="22" fill="#006666" viewBox="0 0 24 24">
+                                    <path d="M23.498 6.186a2.993 2.993 0 0 0-2.107-2.116C19.232 3.5 12 3.5 12 3.5s-7.232 0-9.391.57A2.993 2.993 0 0 0 .502 6.186C0 8.344 0 12 0 12s0 3.656.502 5.814a2.993 2.993 0 0 0 2.107 2.116C4.768 20.5 12 20.5 12 20.5s7.232 0 9.391-.57a2.993 2.993 0 0 0 2.107-2.116C24 15.656 24 12 24 12s0-3.656-.502-5.814zM9.545 15.568V8.432l6.545 3.568-6.545 3.568z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <svg width="22" height="22" fill="#006666" viewBox="0 0 24 24">
+                                    <path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195A4.916 4.916 0 0 0 16.616 3c-2.717 0-4.924 2.206-4.924 4.924 0 .386.044.763.127 1.124C7.728 8.807 4.1 6.884 1.671 3.965c-.423.724-.666 1.561-.666 2.475 0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.868 9.868 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.212c9.057 0 14.009-7.514 14.009-14.009 0-.213-.005-.425-.014-.636A10.025 10.025 0 0 0 24 4.557z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer-social-desc">
+                            Show us your cat with:<br>
+                            #meowshop<br>
+                            #themeowshop
+                        </div>
+                    </div>
+                    <div class="footer-bottom-col">
+                        <div class="footer-bottom-col-title">Policies</div>
+                        <ul class="footer-bottom-col-list">
+                            <li>Shipping Policy</li>
+                            <li>Refund Policy</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms of Service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            Copyright © 2022 The Meow Shop. All rights reserved
+        </div>
+    </div>
+</footer>
